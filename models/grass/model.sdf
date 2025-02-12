@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<sdf version='1.5'>
+  <model name='grass'>
+    <static>true</static>
+      <link name='grass'>
+        <pose frame=''>0 0 0 0 0 0</pose>
+         <collision name='grass'>
+          <geometry>
+            <mesh>
+              <uri>model://grass/grass.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='grass'>
+        <cast_shadows>false</cast_shadows>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>model://grass/grass.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>grass</name>
+              <uri>model://grass/grass.dae</uri>
+            </script>
+          </material>
+        </visual>
+      </link>
+  </model>
+</sdf>
+

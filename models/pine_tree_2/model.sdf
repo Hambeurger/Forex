@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<sdf version='1.5'>
+  <model name='pine_tree_2'>
+    <static>true</static>
+      <link name='pine_tree_2'>
+        <pose frame=''>0 0 0 0 0 0</pose>
+         <collision name='pine_tree_2'>
+          <geometry>
+            <mesh>
+              <uri>model://pine_tree_2/pine_tree_2.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='pine_tree_2'>
+        <cast_shadows>false</cast_shadows>
+          <geometry>
+            <mesh>
+              <scale>0.5 0.5 0.5</scale>
+              <uri>model://pine_tree_2/pine_tree_2.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>pine_tree_2</name>
+              <uri>model://pine_tree_2/pine_tree_2.dae</uri>
+            </script>
+          </material>
+        </visual>
+      </link>
+  </model>
+</sdf>
+

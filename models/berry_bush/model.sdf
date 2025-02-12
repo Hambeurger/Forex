@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<sdf version='1.5'>
+  <model name='berry_bush'>
+    <static>true</static>
+      <link name='berry_bush'>
+        <pose frame=''>0 0 0 0 0 0</pose>
+         <collision name='berry_bush'>
+          <geometry>
+            <mesh>
+              <uri>model://berry_bush/berry_bush.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='berry_bush'>
+        <cast_shadows>false</cast_shadows>
+          <geometry>
+            <mesh>
+              <scale>3 3 3</scale>
+              <uri>model://berry_bush/berry_bush.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>berry_bush</name>
+              <uri>model://berry_bush/berry_bush.dae</uri>
+            </script>
+          </material>
+        </visual>
+      </link>
+  </model>
+</sdf>
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<sdf version='1.5'>
+  <model name='birch_tree'>
+    <static>true</static>
+      <link name='birch_tree'>
+        <pose frame=''>0 0 0 0 0 0</pose>
+         <collision name='birch_tree'>
+          <geometry>
+            <mesh>
+              <uri>model://birch_tree/birch_tree.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='birch_tree'>
+        <cast_shadows>false</cast_shadows>
+          <geometry>
+            <mesh>
+              <scale>0.4 0.4 0.4</scale>
+              <uri>model://birch_tree/birch_tree.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>birch_tree</name>
+              <uri>model://birch_tree/birch_tree.dae</uri>
+            </script>
+          </material>
+        </visual>
+      </link>
+  </model>
+</sdf>
+

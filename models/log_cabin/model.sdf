@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<sdf version='1.5'>
+  <model name='log_cabin'>
+    <static>true</static>
+      <link name='log_cabin'>
+        <pose frame=''>0 0 0 0 0 0</pose>
+         <collision name='log_cabin'>
+          <geometry>
+            <mesh>
+              <uri>model://log_cabin/log_cabin.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='log_cabin'>
+        <cast_shadows>false</cast_shadows>
+          <geometry>
+            <mesh>
+              <scale>0.2 0.2 0.2</scale>
+              <uri>model://log_cabin/log_cabin.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>log_cabin</name>
+              <uri>model://log_cabin/log_cabin.dae</uri>
+            </script>
+          </material>
+        </visual>
+      </link>
+  </model>
+</sdf>
+
