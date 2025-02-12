@@ -1,0 +1,5 @@
+<launch>
+  <param name="trees_Tree_description" command="$(find xacro)/xacro --inorder '$(find blender_gazebo)/urdf/trees_Tree.urdf.xacro'" />
+
+  <node name="spawn_trees_Tree" pkg="gazebo_ros" type="spawn_model" args="-param trees_Tree_description -urdf -model trees_Tree" respawn="false" />
+</launch>
